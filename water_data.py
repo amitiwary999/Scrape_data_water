@@ -1,4 +1,4 @@
-iimport selenium
+import selenium
 from selenium import webdriver
 #from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.select import Select
@@ -55,7 +55,7 @@ for v in opt:  # selecting state
                         try:
                             browser.find_element_by_id('genButton').click()
                         except:
-                            print("erro")
+                            print("error")
                         browser.implicitly_wait(20)
                         try:
                             table = browser.find_element_by_xpath('//table[@id="dataTable"]/tbody')
